@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
         - name: go-web-app
+          imagePullPolicy: IfNotPresent
           image: vinay2806/go-web-app:v1
           ports:
             - containerPort: 8080

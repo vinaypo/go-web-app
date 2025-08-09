@@ -16,6 +16,7 @@ spec:
     spec:
       containers:
         - name: go-web-app
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
           image: {{ .Values.image.repository }}:{{ .Values.image.tag}}
           ports:
             - containerPort: {{ .Values.image.ports.containerPort }}
