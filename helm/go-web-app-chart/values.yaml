@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: vinay2806/go-web-app
-  tag: v2
+  tag: "16853045152"
   pullPolicy: IfNotPresent
   ports:
     containerPort: 8080
