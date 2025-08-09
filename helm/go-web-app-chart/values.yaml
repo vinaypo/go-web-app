@@ -20,11 +20,11 @@ ingress:
       backend:
         service:
           port:
-            number: 80
+            number: 8080
 
 service:
   enabled: true
   type: ClusterIP
-  port: 80
+  port: 8080
   targetPort: 8080
   protocol: TCP
